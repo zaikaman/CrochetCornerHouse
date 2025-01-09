@@ -2,13 +2,15 @@ import { products } from '@/data/products';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SearchParams } from 'next/navigation';
 
-export default async function SearchPage({
-  searchParams,
-}: {
-  searchParams: { [key: string]: string | string[] | undefined }
-}) {
-  const query = (typeof searchParams.q === 'string' ? searchParams.q : '').toLowerCase();
+interface PageProps {
+  params: { slug: string };
+  searchParams: { [key: string]: string | undefined };
+}
+
+export default function SearchPage({ searchParams }: PageProps) {
+  const query = searchParams.q?.toLowerCase() || '';
   
   const searchResults = products.filter(product => 
     product.name.toLowerCase().includes(query) || 
