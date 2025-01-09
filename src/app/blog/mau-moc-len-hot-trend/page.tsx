@@ -3,14 +3,8 @@ import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
 import { blogPosts } from '@/data/blog-posts';
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-
-export default function BlogPostPage({ params }: Props) {
-  const post = blogPosts.find((p) => p.slug === params.slug)!;
+export default function BlogPostPage() {
+  const post = blogPosts[5]; // Bài viết thứ sáu
   const relatedPosts = blogPosts
     .filter((p) => p.category === post.category && p.id !== post.id)
     .slice(0, 3);
@@ -113,7 +107,15 @@ export default function BlogPostPage({ params }: Props) {
                 {relatedPosts.map((relatedPost) => (
                   <Link
                     key={relatedPost.id}
-                    href={`/blog/${relatedPost.slug}`}
+                    href={`/blog/${relatedPost.id === 1 ? 'huong-dan-moc-len-co-ban' : 
+                           relatedPost.id === 2 ? 'mau-thu-len-de-thuong' :
+                           relatedPost.id === 3 ? 'cach-chon-len-phu-hop' :
+                           relatedPost.id === 4 ? 'bi-quyet-moc-len-deu-tay' :
+                           relatedPost.id === 5 ? 'cach-moc-hoa-len-hong' :
+                           relatedPost.id === 6 ? 'mau-moc-len-hot-trend' :
+                           relatedPost.id === 7 ? 'cach-phoi-mau-len' :
+                           relatedPost.id === 8 ? 'cach-bao-quan-san-pham-len' :
+                           relatedPost.id === 9 ? 'moc-len-giam-stress' : 'khoi-nghiep-nghe-moc-len'}`}
                     className="group"
                   >
                     <article className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">

@@ -40,7 +40,15 @@ export default function BlogPage() {
               {blogPosts.map((post) => (
                 <Link 
                   key={post.id} 
-                  href={`/blog/${post.slug}`}
+                  href={`/blog/${post.id === 1 ? 'huong-dan-moc-len-co-ban' : 
+                         post.id === 2 ? 'mau-thu-len-de-thuong' :
+                         post.id === 3 ? 'cach-chon-len-phu-hop' :
+                         post.id === 4 ? 'bi-quyet-moc-len-deu-tay' :
+                         post.id === 5 ? 'cach-moc-hoa-len-hong' :
+                         post.id === 6 ? 'mau-moc-len-hot-trend' :
+                         post.id === 7 ? 'cach-phoi-mau-len' :
+                         post.id === 8 ? 'cach-bao-quan-san-pham-len' :
+                         post.id === 9 ? 'moc-len-giam-stress' : 'khoi-nghiep-nghe-moc-len'}`}
                   className="group"
                 >
                   <article className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden h-full">
