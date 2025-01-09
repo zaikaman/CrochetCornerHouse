@@ -105,12 +105,18 @@ const Header = () => {
                       {searchResults.map((product) => (
                         <Link
                           key={product.id}
-                          href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
-                          className="flex items-center space-x-4 p-3 hover:bg-gray-50 transition-colors"
-                          onClick={() => {
-                            setShowResults(false);
-                            setSearchQuery('');
-                          }}
+                          href={`/products/${product.id === 1 ? 'hoalenhong' : 
+                                 product.id === 2 ? 'thulentrang' : 
+                                 product.id === 3 ? 'thulenheo' :
+                                 product.id === 4 ? 'setlennho' :
+                                 product.id === 5 ? 'setlenlon' :
+                                 product.id === 6 ? 'hoalenmau1' :
+                                 product.id === 7 ? 'hoalenmau2' :
+                                 product.id === 8 ? 'set12congiap' :
+                                 product.id === 9 ? 'thubongmau' :
+                                 'tranhtutheu'}`}
+                          className="block p-4 hover:bg-pink-50"
+                          onClick={() => setShowResults(false)}
                         >
                           <div className="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
                             <Image
