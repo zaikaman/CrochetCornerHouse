@@ -66,11 +66,17 @@ const products = [
   }
 ];
 
+export function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id.toString(),
+  }));
+}
+
 type Props = {
   params: { id: string }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export function generateMetadata({ params }: Props): Metadata {
   const product = products.find(p => p.id === parseInt(params.id));
   return {
     title: product ? `${product.name} | Crochet Corner House` : 'Không tìm thấy sản phẩm',
