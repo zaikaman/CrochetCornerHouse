@@ -3,12 +3,14 @@ import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function SearchPage({
-  searchParams,
-}: {
-  searchParams: Record<string, string | string[] | undefined>;
-}) {
-  const query = searchParams.q?.toString().toLowerCase() || '';
+type Props = {
+  searchParams?: {
+    q?: string;
+  };
+};
+
+export default function SearchPage({ searchParams = { q: '' } }: Props) {
+  const query = searchParams.q?.toLowerCase() || '';
   
   const searchResults = products.filter(product => 
     product.name.toLowerCase().includes(query) || 
