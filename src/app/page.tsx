@@ -1,29 +1,9 @@
 import Image from 'next/image';
 import Layout from '@/components/layout/Layout';
 import Link from 'next/link';
+import { products } from '@/data/products';
 
 export default function Home() {
-  const products = [
-    {
-      id: 1,
-      name: 'Hoa len hồng',
-      price: 30000,
-      image: '/sanpham1.jpg'
-    },
-    {
-      id: 2,
-      name: 'Thú len trắng',
-      price: 30000,
-      image: '/sanpham2.jpg'
-    },
-    {
-      id: 3,
-      name: 'Thú len heo',
-      price: 30000,
-      image: '/sanpham3.jpg'
-    }
-  ];
-
   return (
     <Layout>
       {/* Hero Section */}
