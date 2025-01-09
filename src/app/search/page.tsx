@@ -3,11 +3,11 @@ import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
 
-type SearchPageProps = {
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export default function SearchPage({ searchParams }: SearchPageProps) {
+export default async function SearchPage({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
   const query = (typeof searchParams.q === 'string' ? searchParams.q : '').toLowerCase();
   
   const searchResults = products.filter(product => 
