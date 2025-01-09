@@ -19,7 +19,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Chào mừng đến với
-              <span className="text-pink-600"> CrochetCorn</span>
+              <span className="text-pink-600"> Crochet Corner</span>
             </h1>
             <p className="text-lg text-gray-700 mb-8">
               Nơi những sợi len được đan dệt thành tình yêu và niềm vui. Khám phá bộ sưu tập độc đáo của chúng tôi ngay hôm nay!
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              CrochetCorn Trên Facebook
+              Crochet Corner Trên Facebook
             </h2>
             <p className="text-lg text-gray-700">
               Theo dõi chúng tôi để xem những video thú vị về móc len
@@ -148,7 +148,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Tại Sao Chọn CrochetCorn?
+              Tại Sao Chọn Crochet Corner?
             </h2>
             <p className="text-lg text-gray-700">
               Chúng tôi cam kết mang đến những sản phẩm chất lượng nhất
@@ -208,7 +208,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-              Tham Gia Cộng Đồng CrochetCorn
+              Tham Gia Cộng Đồng Crochet Corner
             </h2>
             <p className="text-lg text-gray-700 mb-8">
               Kết nối với những người yêu thích móc len, chia sẻ niềm đam mê và học hỏi những điều mới mẻ

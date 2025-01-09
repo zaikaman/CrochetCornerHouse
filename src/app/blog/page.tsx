@@ -14,7 +14,7 @@ export default function BlogPage() {
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto">
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Blog CrochetCorn
+                Blog Crochet Corner
               </h1>
               <p className="text-lg text-gray-700 mb-8">
                 Khám phá thế giới móc len qua những bài viết hữu ích và thú vị

@@ -63,7 +63,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/basic-crochet.jpg",
     category: "Hướng dẫn",
     date: "2024-01-15",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 2,
@@ -126,7 +126,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/cute-amigurumi.jpg", 
     category: "Mẫu móc len",
     date: "2024-01-20",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 3,
@@ -185,7 +185,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/yarn-types.png",
     category: "Kiến thức",
     date: "2024-01-25",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 4,
@@ -242,7 +242,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/crochet-tips.jpg",
     category: "Mẹo vặt", 
     date: "2024-01-30",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 5,
@@ -302,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/rose-crochet.jpg",
     category: "Hướng dẫn",
     date: "2024-02-05",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 6,
@@ -387,7 +387,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/trending-crochet.jpg", 
     category: "Xu hướng",
     date: "2024-02-10",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 7,
@@ -444,7 +444,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/color-combination.jpg",
     category: "Kiến thức",
     date: "2024-02-15",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 8,
@@ -501,7 +501,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/yarn-care.jpg",
     category: "Mẹo vặt",
     date: "2024-02-20",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 9,
@@ -558,7 +558,7 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/crochet-therapy.jpg",
     category: "Sức khỏe", 
     date: "2024-02-25",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   },
   {
     id: 10,
@@ -615,6 +615,6 @@ export const blogPosts: BlogPost[] = [
     image: "/blog/crochet-business.jpg",
     category: "Kinh doanh",
     date: "2024-03-01",
-    author: "CrochetCorn"
+    author: "Crochet Corner"
   }
 ]; 
