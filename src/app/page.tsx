@@ -108,7 +108,10 @@ export default function Home() {
               <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden animate-float" style={{ animationDelay: `${product.id * 200}ms` }}>
                 <div className="relative aspect-square overflow-hidden">
                   <Link
-                    href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
+                    href={`/products/${product.id === 1 ? 'hoalenhong' : 
+                           product.id === 2 ? 'thulentrang' : 
+                           product.id === 3 ? 'thulenheo' :
+                           product.id === 4 ? 'setlennho' : 'setlenlon'}`}
                     className="block relative w-full h-full"
                   >
                     <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>

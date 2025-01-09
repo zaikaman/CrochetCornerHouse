@@ -74,5 +74,47 @@ export const products: Product[] = [
     },
     story: 'Chú heo len này được tạo ra với mong muốn mang lại niềm vui và tiếng cười. Lấy cảm hứng từ những biểu cảm đáng yêu của loài heo, mỗi chi tiết nhỏ đều được chăm chút để tạo nên một người bạn nhỏ đáng yêu nhất.',
     care: 'Giặt nhẹ bằng tay với nước ấm, không sử dụng máy giặt, phơi khô tự nhiên.'
+  },
+  {
+    id: 4,
+    name: 'Set móc len nhỏ',
+    price: 70000,
+    image: '/setnho.jpg',
+    description: 'Set móc len nhỏ gồm 4 cuộn len LILIARGE, kèm theo đầy đủ phụ kiện: 2 móc khóa, 10 mắt thú, kim móc len, kim khâu, ghim đánh dấu và gòn bi. Bộ dụng cụ hoàn hảo để bắt đầu hành trình móc len của bạn.',
+    details: {
+      size: 'Set 4 cuộn len',
+      material: 'Len LILIARGE cao cấp',
+      colors: ['Vàng', 'Xanh dương', 'Trắng', 'Hồng'],
+      features: [
+        'Đầy đủ phụ kiện cơ bản',
+        'Len mềm mại, dễ đan',
+        'Phù hợp cho người mới bắt đầu',
+        'Có hướng dẫn cơ bản',
+        'Bao gồm: 4 cuộn len, 2 móc khóa, 10 mắt thú, kim móc len, kim khâu, ghim đánh dấu, gòn bi'
+      ]
+    },
+    story: 'Set móc len nhỏ được thiết kế đặc biệt cho những người mới bắt đầu tìm hiểu về nghệ thuật móc len. Mỗi thành phần trong bộ sản phẩm đều được chọn lọc kỹ càng để đảm bảo trải nghiệm móc len đầu tiên của bạn thật tuyệt vời.',
+    care: 'Bảo quản len ở nơi khô ráo, tránh ánh nắng trực tiếp. Giặt sản phẩm hoàn thiện bằng tay với nước lạnh.'
+  },
+  {
+    id: 5,
+    name: 'Set móc len lớn',
+    price: 120000,
+    image: '/setlon.jpg',
+    description: 'Set móc len lớn gồm 8 cuộn len LILIARGE đa dạng màu sắc, đi kèm đầy đủ phụ kiện cao cấp: 5 móc khóa, 20 mắt thú, kim móc len, kim khâu, ghim đánh dấu và gòn bi. Bộ sản phẩm hoàn hảo cho những dự án móc len đa dạng.',
+    details: {
+      size: 'Set 8 cuộn len',
+      material: 'Len LILIARGE cao cấp',
+      colors: ['Vàng', 'Xanh dương', 'Trắng', 'Hồng', 'Xanh lá', 'Nâu', 'Xanh mint', 'Tím'],
+      features: [
+        'Bộ len đa dạng màu sắc',
+        'Phụ kiện cao cấp đầy đủ',
+        'Thích hợp cho nhiều dự án',
+        'Chất lượng len cao cấp',
+        'Bao gồm: 8 cuộn len, 5 móc khóa, 20 mắt thú, kim móc len, kim khâu, ghim đánh dấu, gòn bi'
+      ]
+    },
+    story: 'Set móc len lớn là sự lựa chọn hoàn hảo cho những người yêu thích nghệ thuật móc len và muốn thử sức với nhiều dự án đa dạng. Với đầy đủ màu sắc và phụ kiện, bộ sản phẩm này sẽ giúp bạn thỏa sức sáng tạo và tạo nên những tác phẩm độc đáo.',
+    care: 'Bảo quản len ở nơi khô ráo, tránh ánh nắng trực tiếp. Giặt sản phẩm hoàn thiện bằng tay với nước lạnh.'
   }
 ]; 

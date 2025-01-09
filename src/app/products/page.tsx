@@ -58,7 +58,10 @@ export default function ProductsPage() {
                 {/* Product Image */}
                 <div className="relative aspect-square overflow-hidden">
                   <Link
-                    href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
+                    href={`/products/${product.id === 1 ? 'hoalenhong' : 
+                           product.id === 2 ? 'thulentrang' : 
+                           product.id === 3 ? 'thulenheo' :
+                           product.id === 4 ? 'setlennho' : 'setlenlon'}`}
                     className="block relative w-full h-full"
                   >
                     <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
