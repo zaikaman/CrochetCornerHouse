@@ -69,10 +69,9 @@ interface PageProps {
   params: {
     id: string;
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function ProductDetail({ params, searchParams }: PageProps) {
+export default function ProductDetail({ params }: PageProps) {
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
