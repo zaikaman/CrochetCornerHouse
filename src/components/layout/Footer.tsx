@@ -49,7 +49,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Theo Dõi Chúng Tôi</h3>
             <div className="flex space-x-4">
               <a 
-                href="https://www.facebook.com/crochetcorn" 
+                href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-gray-700 hover:text-pink-600"

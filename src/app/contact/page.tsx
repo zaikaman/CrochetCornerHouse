@@ -62,7 +62,7 @@ export default function ContactPage() {
                 </ul>
                 <div className="text-center pt-4">
                   <a 
-                    href="https://www.facebook.com/crochetcorn"
+                    href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center space-x-2 bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors"

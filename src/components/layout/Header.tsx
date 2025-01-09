@@ -152,7 +152,7 @@ const Header = () => {
 
             {/* Facebook Link - Simplified on Mobile */}
             <a 
-              href="https://www.facebook.com/crochetcorn" 
+              href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center space-x-1 md:space-x-2 text-gray-700 hover:text-pink-600 transition-colors"

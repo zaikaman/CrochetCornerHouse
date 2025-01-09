@@ -214,7 +214,7 @@ export default function Home() {
               Kết nối với những người yêu thích móc len, chia sẻ niềm đam mê và học hỏi những điều mới mẻ
             </p>
             <a 
-              href="https://www.facebook.com/crochetcorn"
+              href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors"

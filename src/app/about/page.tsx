@@ -136,7 +136,7 @@ export default function AboutPage() {
               Mỗi sản phẩm từ Crochet Corner House không chỉ là một món đồ thủ công, mà còn là một phần của câu chuyện về tình yêu, sự sáng tạo và đam mê. Chúng tôi mời bạn trở thành một phần của câu chuyện này.
             </p>
             <a 
-              href="https://www.facebook.com/crochetcorn"
+              href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors"

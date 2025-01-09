@@ -190,7 +190,7 @@ export default function ProductsPage() {
               Like Fanpage để cập nhật những sản phẩm mới nhất và nhận thông tin khuyến mãi hấp dẫn
             </p>
             <a 
-              href="https://www.facebook.com/crochetcorn"
+              href="https://www.facebook.com/profile.php?id=61571769269643&is_tour_completed"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center space-x-2 bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors group"
