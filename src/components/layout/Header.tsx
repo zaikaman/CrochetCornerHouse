@@ -53,13 +53,13 @@ const Header = () => {
             </nav>
           </div>
 
-          {/* User Actions */}
+          {/* Right Actions */}
           <div className="flex items-center space-x-6">
             {/* Search */}
             <div className="relative">
               <input 
                 type="text" 
-                placeholder="Hirono" 
+                placeholder="Tìm kiếm..." 
                 className="bg-gray-100 rounded-full pl-4 pr-10 py-2 w-40 focus:outline-none focus:ring-2 focus:ring-pink-600 text-gray-700 placeholder-gray-500"
               />
               <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
@@ -82,13 +82,18 @@ const Header = () => {
               <span className="text-sm font-medium text-gray-700">VN</span>
             </div>
 
-            {/* Sign in / Register */}
-            <div className="flex items-center space-x-1">
-              <svg className="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            {/* Facebook Link */}
+            <a 
+              href="https://www.facebook.com/crochetcorn" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors"
+            >
+              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
-              <span className="text-sm font-medium text-gray-700">Sign in / Register</span>
-            </div>
+              <span className="text-sm font-medium">Đặt hàng qua Facebook</span>
+            </a>
 
             {/* Support */}
             <button className="text-gray-700 hover:text-pink-600">
@@ -96,25 +101,6 @@ const Header = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>
             </button>
-
-            {/* Wishlist */}
-            <button className="text-gray-700 hover:text-pink-600">
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </button>
-
-            {/* Cart */}
-            <Link href="/cart" className="flex items-center space-x-1">
-              <div className="relative">
-                <svg className="w-6 h-6 text-gray-700 hover:text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-                <span className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                  0
-                </span>
-              </div>
-            </Link>
           </div>
         </div>
       </div>
