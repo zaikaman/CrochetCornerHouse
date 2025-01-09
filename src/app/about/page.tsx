@@ -119,7 +119,7 @@ export default function AboutPage() {
               Chúng tôi không chỉ đơn thuần là một cửa hàng bán đồ len móc, mà còn là nơi lan tỏa niềm đam mê và tình yêu với nghệ thuật thủ công. Mỗi sản phẩm của chúng tôi đều mang trong mình một câu chuyện, một cảm xúc, và chúng tôi muốn chia sẻ những điều đó với bạn.
             </p>
             <div className="text-pink-600 font-medium">
-              "Dệt nên yêu thương, kết nối trái tim"
+              &ldquo;Dệt nên yêu thương, kết nối trái tim&rdquo;
             </div>
           </div>
         </div>
