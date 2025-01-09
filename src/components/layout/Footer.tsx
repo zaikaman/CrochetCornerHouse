@@ -40,7 +40,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-4">Liên Hệ</h3>
             <ul className="space-y-2 text-gray-700">
               <li>Email: contact@crochetcorner.com</li>
-              <li>Phone: 0123 456 789</li>
+              <li>Phone: 093 303 23 92</li>
             </ul>
           </div>
 

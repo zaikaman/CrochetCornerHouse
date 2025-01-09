@@ -40,7 +40,7 @@ export const products: Product[] = [
     name: 'Thú len trắng',
     price: 30000,
     image: '/sanpham2.jpg',
-    description: 'Chú thỏ len trắng tinh khôi, được chế tác thủ công với những đường nét tỉ mỉ. Một món quà hoàn hảo cho những người yêu thích sự đơn giản và tinh tế.',
+    description: 'Chú cừu len trắng tinh khôi, được chế tác thủ công với những đường nét tỉ mỉ. Một món quà hoàn hảo cho những người yêu thích sự đơn giản và tinh tế.',
     details: {
       size: '18cm x 12cm',
       material: 'Len merino cao cấp, bông gòn kháng khuẩn',
@@ -52,7 +52,7 @@ export const products: Product[] = [
         'Độ bền cao'
       ]
     },
-    story: 'Chú thỏ trắng này được sinh ra từ ý tưởng về sự thuần khiết và đơn giản. Mỗi đường nét được chăm chút kỹ lưỡng, tạo nên một tác phẩm nghệ thuật nhỏ bé mang đến cảm giác bình yên và ấm áp.',
+    story: 'Chú cừu trắng này được sinh ra từ ý tưởng về sự thuần khiết và đơn giản. Mỗi đường nét được chăm chút kỹ lưỡng, tạo nên một tác phẩm nghệ thuật nhỏ bé mang đến cảm giác bình yên và ấm áp.',
     care: 'Tránh tiếp xúc với nước trực tiếp, vệ sinh bằng khăn ẩm, bảo quản nơi khô ráo.'
   },
   {
