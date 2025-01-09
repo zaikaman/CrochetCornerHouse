@@ -1,6 +1,20 @@
+'use client';
+
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const Header = () => {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`);
+    }
+  };
+
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4">
@@ -41,12 +55,6 @@ const Header = () => {
               <Link href="/products" className="text-gray-700 hover:text-pink-600">
                 Sản phẩm
               </Link>
-              <Link href="/blindbox" className="text-gray-700 hover:text-pink-600">
-                Blind Box
-              </Link>
-              <Link href="/blog" className="text-gray-700 hover:text-pink-600">
-                Blog
-              </Link>
               <Link href="/contact" className="text-gray-700 hover:text-pink-600">
                 Liên hệ
               </Link>
@@ -56,18 +64,23 @@ const Header = () => {
           {/* Right Actions */}
           <div className="flex items-center space-x-6">
             {/* Search */}
-            <div className="relative">
+            <form onSubmit={handleSearch} className="relative">
               <input 
                 type="text" 
                 placeholder="Tìm kiếm..." 
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
                 className="bg-gray-100 rounded-full pl-4 pr-10 py-2 w-40 focus:outline-none focus:ring-2 focus:ring-pink-600 text-gray-700 placeholder-gray-500"
               />
-              <button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+              <button 
+                type="submit"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-pink-600 transition-colors"
+              >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                 </svg>
               </button>
-            </div>
+            </form>
 
             {/* Language Selector */}
             <div className="flex items-center space-x-1">
@@ -94,13 +107,6 @@ const Header = () => {
               </svg>
               <span className="text-sm font-medium">Đặt hàng qua Facebook</span>
             </a>
-
-            {/* Support */}
-            <button className="text-gray-700 hover:text-pink-600">
-              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

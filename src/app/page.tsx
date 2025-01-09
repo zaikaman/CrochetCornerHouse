@@ -27,15 +27,21 @@ export default function Home() {
                 Mỗi mũi kim là một câu chuyện, mỗi sản phẩm là một tác phẩm nghệ thuật.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors font-medium flex items-center space-x-2">
+                <Link 
+                  href="/products"
+                  className="bg-pink-600 text-white px-8 py-3 rounded-full hover:bg-pink-700 transition-colors font-medium flex items-center space-x-2"
+                >
                   <span>Khám phá ngay</span>
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </button>
-                <button className="bg-white text-pink-600 px-8 py-3 rounded-full hover:bg-pink-50 transition-colors font-medium border-2 border-pink-600">
+                </Link>
+                <Link 
+                  href="/products"
+                  className="bg-white text-pink-600 px-8 py-3 rounded-full hover:bg-pink-50 transition-colors font-medium border-2 border-pink-600"
+                >
                   Xem bộ sưu tập
-                </button>
+                </Link>
               </div>
               
               {/* Stats */}
@@ -101,13 +107,18 @@ export default function Home() {
             {products.map((product) => (
               <div key={product.id} className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden animate-float" style={{ animationDelay: `${product.id * 200}ms` }}>
                 <div className="relative aspect-square overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
+                  <Link
+                    href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
+                    className="block relative w-full h-full"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                  </Link>
                 </div>
                 <div className="p-6 relative">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-yellow-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
