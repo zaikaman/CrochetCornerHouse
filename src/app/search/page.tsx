@@ -27,7 +27,7 @@ export default function SearchPage({
         <div className="container mx-auto px-4 relative">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Kết Quả Tìm Kiếm: <span className="text-pink-600">"{query}"</span>
+              Kết Quả Tìm Kiếm: <span className="text-pink-600">&ldquo;{query}&rdquo;</span>
             </h1>
             <p className="text-lg text-gray-700">
               Tìm thấy {searchResults.length} sản phẩm
