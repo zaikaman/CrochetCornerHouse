@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-12 pt-8">
           <p className="text-center text-gray-700 text-sm">
-            © 2024 Crochet Corner House. All rights reserved.
+            © 2025 Crochet Corner House. All rights reserved.
           </p>
         </div>
       </div>
