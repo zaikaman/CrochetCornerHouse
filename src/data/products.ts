@@ -4,6 +4,7 @@ export interface Product {
   price: number;
   image: string;
   description: string;
+  category: string;
   details: {
     size: string;
     material: string;
@@ -21,6 +22,7 @@ export const products: Product[] = [
     price: 30000,
     image: '/sanpham1.jpg',
     description: 'Bông hoa len hồng pastel đáng yêu, được đan tỉ mỉ từng mũi kim với chất liệu len mềm mại cao cấp. Kích thước nhỏ gọn phù hợp để trang trí hoặc làm quà tặng.',
+    category: 'Hoa len',
     details: {
       size: '15cm x 10cm',
       material: 'Len nhập khẩu, bông gòn kháng khuẩn',
@@ -41,6 +43,7 @@ export const products: Product[] = [
     price: 30000,
     image: '/sanpham2.jpg',
     description: 'Chú cừu len trắng tinh khôi, được chế tác thủ công với những đường nét tỉ mỉ. Một món quà hoàn hảo cho những người yêu thích sự đơn giản và tinh tế.',
+    category: 'Thú len',
     details: {
       size: '18cm x 12cm',
       material: 'Len merino cao cấp, bông gòn kháng khuẩn',
@@ -61,6 +64,7 @@ export const products: Product[] = [
     price: 30000,
     image: '/sanpham3.jpg',
     description: 'Chú heo len hồng nhỏ nhắn, xinh xắn với đôi má phúng phính đáng yêu. Được làm thủ công từ len organic, an toàn cho cả trẻ nhỏ.',
+    category: 'Thú len',
     details: {
       size: '12cm x 8cm',
       material: 'Len organic, bông gòn tự nhiên',
@@ -81,6 +85,7 @@ export const products: Product[] = [
     price: 70000,
     image: '/setnho.jpg',
     description: 'Set móc len nhỏ gồm 4 cuộn len LILIARGE, kèm theo đầy đủ phụ kiện: 2 móc khóa, 10 mắt thú, kim móc len, kim khâu, ghim đánh dấu và gòn bi. Bộ dụng cụ hoàn hảo để bắt đầu hành trình móc len của bạn.',
+    category: 'Phụ kiện',
     details: {
       size: 'Set 4 cuộn len',
       material: 'Len LILIARGE cao cấp',
@@ -102,6 +107,7 @@ export const products: Product[] = [
     price: 120000,
     image: '/setlon.jpg',
     description: 'Set móc len lớn gồm 8 cuộn len LILIARGE đa dạng màu sắc, đi kèm đầy đủ phụ kiện cao cấp: 5 móc khóa, 20 mắt thú, kim móc len, kim khâu, ghim đánh dấu và gòn bi. Bộ sản phẩm hoàn hảo cho những dự án móc len đa dạng.',
+    category: 'Phụ kiện',
     details: {
       size: 'Set 8 cuộn len',
       material: 'Len LILIARGE cao cấp',
@@ -123,6 +129,7 @@ export const products: Product[] = [
     price: 60000,
     image: '/hoalenmau1.jpg',
     description: 'Bông hoa len được thiết kế độc đáo với màu sắc tươi sáng, thích hợp làm quà tặng hoặc trang trí không gian sống. Mỗi bông hoa được móc thủ công tỉ mỉ từng chi tiết.',
+    category: 'Hoa len',
     details: {
       size: '20cm x 15cm',
       material: 'Len cao cấp, bông gòn kháng khuẩn',
@@ -143,6 +150,7 @@ export const products: Product[] = [
     price: 60000,
     image: '/hoalenmau2.jpg',
     description: 'Bông hoa len phong cách hiện đại với thiết kế tinh tế, là món quà ý nghĩa cho người thân yêu. Sản phẩm được chế tác thủ công từ len cao cấp.',
+    category: 'Hoa len',
     details: {
       size: '18cm x 12cm',
       material: 'Len nhập khẩu, bông gòn kháng khuẩn',
@@ -163,6 +171,7 @@ export const products: Product[] = [
     price: 70000,
     image: '/set12congiap.jpg',
     description: 'Bộ nguyên liệu đầy đủ để tự móc 12 con giáp đáng yêu. Set bao gồm len, kim móc, bông nhồi và hướng dẫn chi tiết để bạn có thể tự tay tạo nên những chú thú nhỏ xinh.',
+    category: 'Thú len',
     details: {
       size: 'Set nguyên liệu đầy đủ',
       material: 'Len cotton, bông nhồi, kim móc',
@@ -183,6 +192,7 @@ export const products: Product[] = [
     price: 60000,
     image: '/thubongmau.jpg',
     description: 'Những chú thú bông đáng yêu được móc thủ công với nhiều mẫu để lựa chọn. Bạn có thể chọn mẫu thú và màu sắc theo ý thích.',
+    category: 'Thú len',
     details: {
       size: '15cm x 10cm',
       material: 'Len cotton, bông nhồi kháng khuẩn',
@@ -203,6 +213,7 @@ export const products: Product[] = [
     price: 120000,
     image: '/tranhtutheu.jpg',
     description: 'Bộ tranh tự thêu với thiết kế độc đáo, bao gồm đầy đủ nguyên liệu và hướng dẫn chi tiết. Thích hợp cho người mới bắt đầu học thêu.',
+    category: 'Tranh len',
     details: {
       size: '30cm x 40cm',
       material: 'Vải canvas, chỉ thêu, kim thêu',

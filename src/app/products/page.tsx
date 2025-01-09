@@ -1,9 +1,24 @@
+"use client";
+
 import { products } from '@/data/products';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ProductsPage() {
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const filteredProducts = products.filter(product => {
+    if (selectedCategory === 'all') return true;
+    return product.category === (
+      selectedCategory === 'hoalen' ? 'Hoa len' :
+      selectedCategory === 'thulen' ? 'Thú len' :
+      selectedCategory === 'tranhlen' ? 'Tranh len' :
+      selectedCategory === 'phukien' ? 'Phụ kiện' : ''
+    );
+  });
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -30,16 +45,54 @@ export default function ProductsPage() {
       <section className="py-8 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <button className="px-6 py-2 rounded-full bg-pink-600 text-white hover:bg-pink-700 transition-colors">
+            <button 
+              onClick={() => setSelectedCategory('all')}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                selectedCategory === 'all' 
+                ? 'bg-pink-600 text-white hover:bg-pink-700' 
+                : 'bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50'
+              }`}
+            >
               Tất cả
             </button>
-            <button className="px-6 py-2 rounded-full bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50 transition-colors">
+            <button 
+              onClick={() => setSelectedCategory('hoalen')}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                selectedCategory === 'hoalen'
+                ? 'bg-pink-600 text-white hover:bg-pink-700'
+                : 'bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50'
+              }`}
+            >
               Hoa len
             </button>
-            <button className="px-6 py-2 rounded-full bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50 transition-colors">
+            <button 
+              onClick={() => setSelectedCategory('thulen')}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                selectedCategory === 'thulen'
+                ? 'bg-pink-600 text-white hover:bg-pink-700'
+                : 'bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50'
+              }`}
+            >
               Thú len
             </button>
-            <button className="px-6 py-2 rounded-full bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50 transition-colors">
+            <button 
+              onClick={() => setSelectedCategory('tranhlen')}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                selectedCategory === 'tranhlen'
+                ? 'bg-pink-600 text-white hover:bg-pink-700'
+                : 'bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50'
+              }`}
+            >
+              Tranh len
+            </button>
+            <button 
+              onClick={() => setSelectedCategory('phukien')}
+              className={`px-6 py-2 rounded-full transition-colors ${
+                selectedCategory === 'phukien'
+                ? 'bg-pink-600 text-white hover:bg-pink-700'
+                : 'bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50'
+              }`}
+            >
               Phụ kiện
             </button>
           </div>
@@ -50,7 +103,7 @@ export default function ProductsPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <div 
                 key={product.id}
                 className="group bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden"
