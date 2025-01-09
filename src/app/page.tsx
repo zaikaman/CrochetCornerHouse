@@ -116,7 +116,7 @@ export default function Home() {
                     {product.price.toLocaleString('vi-VN')}đ
                   </p>
                   <Link 
-                    href={`/products/${product.id}`}
+                    href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
                     className="w-full bg-pink-600 text-white py-3 rounded-full hover:bg-pink-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg font-medium flex items-center justify-center space-x-2 group"
                   >
                     <svg className="w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
