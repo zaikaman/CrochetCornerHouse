@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '@/components/layout/Layout';
+import { Metadata } from 'next';
 
 const products = [
   {
@@ -65,11 +66,19 @@ const products = [
   }
 ];
 
-export default async function ProductDetail({
-  params,
-}: {
+type Props = {
   params: { id: string }
-}) {
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const product = products.find(p => p.id === parseInt(params.id));
+  return {
+    title: product ? `${product.name} | Crochet Corner House` : 'Không tìm thấy sản phẩm',
+    description: product?.description
+  }
+}
+
+export default function Page({ params }: Props) {
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
