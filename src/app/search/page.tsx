@@ -2,7 +2,6 @@ import { products } from '@/data/products';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Metadata } from 'next';
 
 type SearchPageProps = {
   searchParams: { [key: string]: string | string[] | undefined };
