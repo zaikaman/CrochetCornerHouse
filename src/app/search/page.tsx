@@ -2,13 +2,14 @@ import { products } from '@/data/products';
 import Layout from '@/components/layout/Layout';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export default function SearchPage({
-  searchParams,
-}: {
-  searchParams: { q: string };
-}) {
-  const query = searchParams.q?.toLowerCase() || '';
+type SearchPageProps = {
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default function SearchPage({ searchParams }: SearchPageProps) {
+  const query = (typeof searchParams.q === 'string' ? searchParams.q : '').toLowerCase();
   
   const searchResults = products.filter(product => 
     product.name.toLowerCase().includes(query) || 
