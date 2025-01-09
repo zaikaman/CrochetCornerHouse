@@ -65,13 +65,11 @@ const products = [
   }
 ];
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function ProductDetail({ params }: PageProps) {
+export default async function ProductDetail({
+  params,
+}: {
+  params: { id: string }
+}) {
   const product = products.find(p => p.id === parseInt(params.id));
 
   if (!product) {
