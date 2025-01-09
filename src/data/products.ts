@@ -116,5 +116,105 @@ export const products: Product[] = [
     },
     story: 'Set móc len lớn là sự lựa chọn hoàn hảo cho những người yêu thích nghệ thuật móc len và muốn thử sức với nhiều dự án đa dạng. Với đầy đủ màu sắc và phụ kiện, bộ sản phẩm này sẽ giúp bạn thỏa sức sáng tạo và tạo nên những tác phẩm độc đáo.',
     care: 'Bảo quản len ở nơi khô ráo, tránh ánh nắng trực tiếp. Giặt sản phẩm hoàn thiện bằng tay với nước lạnh.'
+  },
+  {
+    id: 6,
+    name: 'Hoa len mẫu 1',
+    price: 60000,
+    image: '/hoalenmau1.jpg',
+    description: 'Bông hoa len được thiết kế độc đáo với màu sắc tươi sáng, thích hợp làm quà tặng hoặc trang trí không gian sống. Mỗi bông hoa được móc thủ công tỉ mỉ từng chi tiết.',
+    details: {
+      size: '20cm x 15cm',
+      material: 'Len cao cấp, bông gòn kháng khuẩn',
+      colors: ['Hồng', 'Trắng', 'Xanh lá'],
+      features: [
+        'Thiết kế độc đáo',
+        'Móc thủ công 100%',
+        'Màu sắc tươi sáng',
+        'Bền đẹp theo thời gian'
+      ]
+    },
+    story: 'Mỗi bông hoa len là một tác phẩm nghệ thuật độc đáo, được tạo nên từ sự tỉ mỉ và tình yêu với nghề móc len. Chúng tôi chọn lọc những sợi len chất lượng nhất và kết hợp với kỹ thuật móc len truyền thống để tạo nên những bông hoa độc đáo.',
+    care: 'Tránh tiếp xúc với nước, lau nhẹ bằng khăn ẩm, bảo quản nơi khô ráo thoáng mát.'
+  },
+  {
+    id: 7,
+    name: 'Hoa len mẫu 2',
+    price: 60000,
+    image: '/hoalenmau2.jpg',
+    description: 'Bông hoa len phong cách hiện đại với thiết kế tinh tế, là món quà ý nghĩa cho người thân yêu. Sản phẩm được chế tác thủ công từ len cao cấp.',
+    details: {
+      size: '18cm x 12cm',
+      material: 'Len nhập khẩu, bông gòn kháng khuẩn',
+      colors: ['Vàng', 'Xanh', 'Hồng'],
+      features: [
+        'Thiết kế hiện đại',
+        'Chất liệu cao cấp',
+        'Màu sắc đa dạng',
+        'Phù hợp làm quà tặng'
+      ]
+    },
+    story: 'Lấy cảm hứng từ vẻ đẹp của những bông hoa trong tự nhiên, chúng tôi tạo nên những bông hoa len với thiết kế độc đáo và màu sắc tươi sáng. Mỗi bông hoa đều được chăm chút tỉ mỉ để mang đến niềm vui cho người nhận.',
+    care: 'Bảo quản nơi khô ráo, tránh ánh nắng trực tiếp, làm sạch bằng chổi lông mềm.'
+  },
+  {
+    id: 8,
+    name: 'Set 12 con giáp',
+    price: 70000,
+    image: '/set12congiap.jpg',
+    description: 'Bộ nguyên liệu đầy đủ để tự móc 12 con giáp đáng yêu. Set bao gồm len, kim móc, bông nhồi và hướng dẫn chi tiết để bạn có thể tự tay tạo nên những chú thú nhỏ xinh.',
+    details: {
+      size: 'Set nguyên liệu đầy đủ',
+      material: 'Len cotton, bông nhồi, kim móc',
+      colors: ['Đa màu sắc'],
+      features: [
+        'Đầy đủ nguyên liệu',
+        'Hướng dẫn chi tiết',
+        'Thích hợp cho người mới',
+        'Tạo ra 12 con giáp'
+      ]
+    },
+    story: 'Set nguyên liệu 12 con giáp được thiết kế đặc biệt cho những người yêu thích móc len và muốn tự tay tạo ra bộ sưu tập thú len độc đáo của riêng mình. Mỗi con vật được thiết kế với tính cách riêng biệt, mang đến niềm vui và sự sáng tạo trong quá trình móc len.',
+    care: 'Bảo quản nguyên liệu nơi khô ráo, tránh ánh nắng trực tiếp và ẩm mốc.'
+  },
+  {
+    id: 9,
+    name: 'Thú bông tự chọn',
+    price: 60000,
+    image: '/thubongmau.jpg',
+    description: 'Những chú thú bông đáng yêu được móc thủ công với nhiều mẫu để lựa chọn. Bạn có thể chọn mẫu thú và màu sắc theo ý thích.',
+    details: {
+      size: '15cm x 10cm',
+      material: 'Len cotton, bông nhồi kháng khuẩn',
+      colors: ['Tùy chọn theo mẫu'],
+      features: [
+        'Đa dạng mẫu mã',
+        'Tùy chọn màu sắc',
+        'An toàn cho trẻ em',
+        'Thích hợp làm quà tặng'
+      ]
+    },
+    story: 'Mỗi chú thú bông là một tác phẩm nghệ thuật độc đáo, được tạo ra với tình yêu và sự tỉ mỉ. Chúng tôi luôn cập nhật các mẫu mới để mang đến nhiều sự lựa chọn cho khách hàng.',
+    care: 'Giặt tay nhẹ nhàng với nước lạnh, không vắt mạnh, phơi khô trong bóng râm.'
+  },
+  {
+    id: 10,
+    name: 'Tranh tự thêu',
+    price: 120000,
+    image: '/tranhtutheu.jpg',
+    description: 'Bộ tranh tự thêu với thiết kế độc đáo, bao gồm đầy đủ nguyên liệu và hướng dẫn chi tiết. Thích hợp cho người mới bắt đầu học thêu.',
+    details: {
+      size: '30cm x 40cm',
+      material: 'Vải canvas, chỉ thêu, kim thêu',
+      colors: ['Đa dạng màu sắc'],
+      features: [
+        'Thiết kế độc đáo',
+        'Hướng dẫn chi tiết',
+        'Đầy đủ nguyên liệu',
+        'Phù hợp người mới'
+      ]
+    },
+    story: 'Bộ tranh tự thêu được thiết kế với mong muốn mang đến niềm vui và sự sáng tạo trong nghệ thuật thêu. Mỗi mũi thêu là một nét vẽ, và bức tranh hoàn thiện sẽ là một tác phẩm nghệ thuật độc đáo của riêng bạn.',
+    care: 'Bảo quản nơi khô ráo, tránh ánh nắng trực tiếp, có thể đóng khung để trưng bày.'
   }
 ]; 

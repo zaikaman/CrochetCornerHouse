@@ -61,7 +61,13 @@ export default function ProductsPage() {
                     href={`/products/${product.id === 1 ? 'hoalenhong' : 
                            product.id === 2 ? 'thulentrang' : 
                            product.id === 3 ? 'thulenheo' :
-                           product.id === 4 ? 'setlennho' : 'setlenlon'}`}
+                           product.id === 4 ? 'setlennho' :
+                           product.id === 5 ? 'setlenlon' :
+                           product.id === 6 ? 'hoalenmau1' :
+                           product.id === 7 ? 'hoalenmau2' :
+                           product.id === 8 ? 'set12congiap' :
+                           product.id === 9 ? 'thubongmau' :
+                           'tranhtutheu'}`}
                     className="block relative w-full h-full"
                   >
                     <div className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 to-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
@@ -85,7 +91,16 @@ export default function ProductsPage() {
                       {product.price.toLocaleString('vi-VN')}đ
                     </span>
                     <Link
-                      href={`/products/${product.id === 1 ? 'hoalenhong' : product.id === 2 ? 'thulentrang' : 'thulenheo'}`}
+                      href={`/products/${product.id === 1 ? 'hoalenhong' : 
+                             product.id === 2 ? 'thulentrang' : 
+                             product.id === 3 ? 'thulenheo' :
+                             product.id === 4 ? 'setlennho' :
+                             product.id === 5 ? 'setlenlon' :
+                             product.id === 6 ? 'hoalenmau1' :
+                             product.id === 7 ? 'hoalenmau2' :
+                             product.id === 8 ? 'set12congiap' :
+                             product.id === 9 ? 'thubongmau' :
+                             'tranhtutheu'}`}
                       className="text-pink-600 hover:text-pink-700 font-medium flex items-center space-x-1 group"
                     >
                       <span>Chi tiết</span>
