@@ -56,13 +56,16 @@ const Header = () => {
               <Link href="/" className="text-gray-700 hover:text-pink-600">
                 Trang chủ
               </Link>
-              <Link href="/products" className="text-gray-700 hover:text-pink-600">
+              <Link href="/products" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Sản phẩm
               </Link>
-              <Link href="/about" className="text-gray-700 hover:text-pink-600">
+              <Link href="/about" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Về chúng tôi
               </Link>
-              <Link href="/contact" className="text-gray-700 hover:text-pink-600">
+              <Link href="/blog" className="text-gray-700 hover:text-pink-600 transition-colors">
+                Blog
+              </Link>
+              <Link href="/contact" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Liên hệ
               </Link>
             </nav>
@@ -196,6 +199,13 @@ const Header = () => {
                 onClick={() => setShowMobileMenu(false)}
               >
                 Về chúng tôi
+              </Link>
+              <Link 
+                href="/blog" 
+                className="text-gray-700 hover:text-pink-600 px-2"
+                onClick={() => setShowMobileMenu(false)}
+              >
+                Blog
               </Link>
               <Link 
                 href="/contact" 
