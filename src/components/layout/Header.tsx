@@ -58,6 +58,9 @@ const Header = () => {
               <Link href="/products" className="text-gray-700 hover:text-pink-600">
                 Sản phẩm
               </Link>
+              <Link href="/about" className="text-gray-700 hover:text-pink-600">
+                Về chúng tôi
+              </Link>
               <Link href="/contact" className="text-gray-700 hover:text-pink-600">
                 Liên hệ
               </Link>

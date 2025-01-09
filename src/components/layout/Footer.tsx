@@ -23,8 +23,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="text-gray-700 hover:text-pink-600">
-                  Blog
+                <Link href="/contact" className="text-gray-700 hover:text-pink-600">
+                  Liên hệ
                 </Link>
               </li>
               <li>
