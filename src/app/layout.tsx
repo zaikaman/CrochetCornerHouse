@@ -6,8 +6,6 @@ const inter = Inter({ subsets: ['latin'] });
 const pacifico = Pacifico({ 
   weight: '400',
   subsets: ['latin'],
-  column: 'flex',
-  // note: keep existing config
   variable: '--font-pacifico',
 });
 const montserrat = Montserrat({ 
@@ -27,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className={`${inter.className} ${pacifico.variable} ${montserrat.variable} dark`}>
+      <body className={`${inter.className} ${pacifico.variable} ${montserrat.variable}`}>
         {children}
       </body>
     </html>
