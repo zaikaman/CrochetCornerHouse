@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className={`${inter.className} ${pacifico.variable} ${montserrat.variable}`}>
+      <body className={`${inter.className} ${pacifico.variable} ${montserrat.variable} dark`}>
         {children}
       </body>
     </html>
