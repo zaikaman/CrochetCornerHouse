@@ -6,6 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 const pacifico = Pacifico({ 
   weight: '400',
   subsets: ['latin'],
+  column: 'flex',
+  // note: keep existing config
   variable: '--font-pacifico',
 });
 const montserrat = Montserrat({ 
